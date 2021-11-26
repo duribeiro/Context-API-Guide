@@ -1,7 +1,7 @@
 # Context-API-guide
 Guia prático de como configurar e usar o Context API do React para iniciantes.
 
-Consulte a [documentação do Context Api](https://pt-br.reactjs.org/docs/context.html) pra explicações mais detalhadas.
+Consulte a [documentação do Context API](https://pt-br.reactjs.org/docs/context.html) pra explicações mais detalhadas.
 
 O Contexto (context) fornece uma forma de compartilhar dados, entre todos componentes da mesma árvore de componentes, sem precisar passar via props de pai pra filho, neto, irmão, etc.. entre os vários níveis da árvore de componentes.
 
