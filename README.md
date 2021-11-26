@@ -54,18 +54,17 @@ A vantagem é evitar a re-renderização de todos os componentes filhos cada vez
 ```js
 // src/context/MyProvider.js
 
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import MyContext from './MyContext';
 
 function MyProvider({ children }) {
-  const contextValue = {
-    number: 1,
-    string: 'Hello world!',
-    object: {},
-    array: [],
-    function: myFunction(),
-  };
+  // aqui colocamos toda a lógica necessária para obtenção dos dados que vamos prover.
+  // Ex: requisições a APIs (fetch), Gerenciamento de estado (useState), etc.
+
+  const [state, setState] = useState([]);
+  
+  const contextValue = [];
 
   return (
     <MyContext.Provider value={ contextValue }>
