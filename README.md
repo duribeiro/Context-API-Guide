@@ -1,4 +1,4 @@
-# Context-API-guide
+# Context-API-Guide
 Guia prático de como configurar e usar o Context API do React para iniciantes.
 
 Consulte a [documentação do Context API](https://pt-br.reactjs.org/docs/context.html) pra explicações mais detalhadas.
@@ -62,12 +62,12 @@ function MyProvider({ children }) {
   // aqui colocamos toda a lógica necessária para obtenção dos dados que vamos prover.
   // Ex: requisições a APIs (fetch), Gerenciamento de estado (useState), etc.
 
-  const [state, setState] = useState([]);
+  const [state, setState] = useState('value');
   
-  const contextValue = [];
+  setState('newValue');
 
   return (
-    <MyContext.Provider value={ contextValue }>
+    <MyContext.Provider value={ state }>
       {children}
     </MyContext.Provider>
   );
